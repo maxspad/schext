@@ -1,0 +1,112 @@
+/* updated by Blake to correct the big buttons on IE6 */
+/*.ui-multiselect { padding:2px 0 2px 4px; text-align:left }*/
+/*.ui-multiselect { height: 20px; font-size: 11px; padding:2px 0 2px 4px; text-align:left; font-family: Tahoma, Geneva, Arial, Helvetica, Sans-Serif; line-height: 11px; overflow-x:hidden; }*/
+
+
+.ui-multiselect {
+	overflow-x:hidden;
+    position: relative;
+    display: inline-block;
+    padding: 5.4px 39.6px 5.4px 7.2px;
+    border-radius: 3.6px;
+    border: 1px solid #D2D6DC;
+    background: #FFF url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="29" height="14" stroke="%235A6C84" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>') right center no-repeat;
+    box-shadow: 0 0.9px 1.8px 0 rgba(0,0,0,0.05);
+    font-weight: 500;
+    font-size: 13.5px !important;
+    text-align: left;
+    color: #061B39;
+    -webkit-appearance: none;
+}
+
+
+.ui-multiselect span.ui-icon { float:right; }
+.ui-multiselect-single .ui-multiselect-checkboxes input { position:absolute !important; top: auto !important; left:-9999px; }
+.ui-multiselect-single .ui-multiselect-checkboxes label { padding:4.5px !important; }
+
+.ui-multiselect-header { margin-bottom:2.7px; padding:2.7px 0 2.7px 3.6px; }
+.ui-multiselect-header ul { font-size:0.9em; }
+.ui-multiselect-header ul li { float:left; padding:0 9px 0 0; }
+.ui-multiselect-header a { text-decoration:none; }
+.ui-multiselect-header a:hover { text-decoration:underline; }
+.ui-multiselect-header span.ui-icon { float:left; }
+.ui-multiselect-header li.ui-multiselect-close { float:right; text-align:right; }
+
+.ui-multiselect-menu { display:none; padding:2.7px; position:absolute; z-index:10000; text-align: left; background: #fff; border: 1px solid #818181; overflow-x:hidden; }
+.ui-multiselect-checkboxes { position:relative /* fixes bug in IE6/7 */; overflow-y:auto; overflow-x:hidden; margin:0; clear:both; padding-left:0px; line-height: 1; border-top:1px solid;}
+.ui-multiselect-checkboxes label { cursor:default; display:block; border:1px solid transparent; }
+.ui-multiselect-checkboxes label input { position:relative; top:0.9px; vertical-align:middle; }
+.ui-multiselect-checkboxes li { clear:both; font-size:0.9em; padding-right:2.7px; }
+/*.ui-multiselect-checkboxes li.ui-multiselect-optgroup-label { text-align:center; font-weight:bold; border-bottom:1px solid; }*/
+/*.ui-multiselect-checkboxes li.ui-multiselect-optgroup-label a { display:block; padding:3px; margin:1px 0; text-decoration:none; }*/
+
+/* remove label borders in IE6 because IE6 does not support transparency */
+* html .ui-multiselect-checkboxes label { border:none }
+
+.ui-multiselect-checkboxes label span { vertical-align:middle; }
+.ui-multiselect span { white-space:nowrap; overflow-x:hidden; line-height:1 }
+.ui-multiselect-checkboxes li { list-style:none; }
+
+.ui-multiselect-checkboxes .sddIndent
+{
+	margin-left: 13.5px;
+}
+.ui-multiselect-checkboxes .sddIndent2
+{
+	margin-left: 27px;
+}
+
+.ui-multiselect-checkboxes .sddBold
+{
+	font-weight: bold;
+	font-style: italic;
+}
+
+.ui-multiselect-checkboxes li.sddDivision
+{
+	font-size:1.3em;
+	border-top: 1px solid #ddd;
+	/*color:black;*/
+	font-style: normal;
+	font-weight: bold;
+	padding-left: 0.9px;
+	padding-top: 1.8px;
+	margin-top: 1.8px;
+}
+
+.ui-multiselect-checkboxes li.sddTeam
+{
+	font-size:1.1em;
+	/*color:#2976CE;*/
+	font-style: normal;
+	font-weight: bold;
+	padding-left: 7.2px;
+	padding-top: 0.9px;
+	/*padding-bottom: 1px;*/
+}
+
+@media print{
+    .ui-multiselect-menu {display: none;}   
+    
+}
+
+.ui-multiselect-single .ui-multiselect-checkboxes .sddIndent input
+{
+	top: auto !important;
+	margin-right: 4.5px;
+	left:unset;
+	position: relative !important;
+}
+.ui-multiselect-single .sddIndent .ui-state-active :not(.ui-multiselect) :not(span) > .ui-multiselect, .ui-widget-content .ui-state-active:not(.ui-multiselect), .ui-widget-header .ui-state-active
+{
+	border: none;
+	font-weight: normal;
+}
+.ui-multiselect-single .ui-multiselect-checkboxes .sddIndent label
+{
+	padding: 1.8px !important;
+}
+.ui-multiselect-single .ui-multiselect-checkboxes .sddIndent
+{
+	padding-left: 4.5px;
+}

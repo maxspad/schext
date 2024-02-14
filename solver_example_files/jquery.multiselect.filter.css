@@ -1,0 +1,5 @@
+/* Modified by Chad to work with SA */
+.ui-multiselect-hasfilter ul { position:relative; top:1.8px; }
+.ui-multiselect-filter { clear:both; margin-right:9px; font-size:10.8px; padding-bottom:2.7px; }
+.ui-multiselect-filter input { width:135px; font-size:10.8px; margin-left:4.5px; height:14.4px; padding:1.8px; border:1px solid #292929; -webkit-appearance:textfield; -webkit-box-sizing:content-box; }
+.ui-multiselect-filter span { vertical-align:middle; }

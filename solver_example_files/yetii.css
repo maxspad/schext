@@ -1,0 +1,75 @@
+/* demo */
+
+div.tabContainer {
+	width: 100%;
+	margin: 4.5px 0 18px 0;
+}
+
+ul.tabContainerTabs {
+	list-style-type: none !important;
+	width: 100% !important;
+	float: left !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	/*background: url(../images/pixel.gif?v=1) bottom left repeat-x !important;*/
+}
+
+ul.tabContainerTabs li {
+	margin: 0 1.8px 0 0 !important;
+	padding: 0 !important;
+	float: left !important;
+	background: transparent !important;
+}
+
+ul.tabContainerTabs li a {
+	float: left;
+	display: block;
+	padding: 3.6px 5.4px;
+	border: 1px solid #ccc;
+	border-bottom: 0;
+	color: #555555;
+	background: #dddddd;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+ul.tabContainerTabs li a.schedule, ul.tabContainerTabs li a.violations, ul.tabContainerTabs li a.stats, ul.tabContainerTabs li a.distribution {
+	padding-left: 21.6px;
+	background-position: 3.6px 3.6px;
+	background-repeat: no-repeat;
+}
+
+ul.tabContainerTabs li a.schedule {
+	background-image: url(../images/schedule_16.gif?v=1);
+}
+
+ul.tabContainerTabs li a.violations {
+	background-image: url(../images/warning_square_16.gif?v=1);
+}
+
+ul.tabContainerTabs li a.stats {
+	background-image: url(../images/stats_16.gif?v=1);
+}
+
+ul.tabContainerTabs li a.distribution {
+	background-image: url(../images/pie_chart_16.gif?v=1);
+}
+
+ul.tabContainerTabs li a:hover {
+	background-color: #fff;
+}
+
+ul.tabContainerTabs li a.active {
+	background-color: #ffffff;
+	padding-bottom: 4.5px;
+	cursor: default;
+	color: #0000ff;
+}
+
+div.tabContainerBody {
+	clear: left;
+	border: 1px solid #ccc;
+	border-top: 0;
+	padding: 7.2px 7.2px 0 7.2px;
+	background: #ffffff;
+}

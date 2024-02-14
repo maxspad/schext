@@ -1,0 +1,154 @@
+#header {display:none;visibility:hidden;}
+#topbar {display:none;visibility:hidden;}
+#menuh-container {display:none;visibility:hidden;}
+#sideBar {display:none;visibility:hidden;float:none;}
+#footer {display:none;visibility:hidden;}
+#wrap {width:auto;}
+#content {
+	width:auto;
+	float:none;
+	margin:0px;
+	padding:0px;
+	top: var(--print-top);
+}
+body::before
+{
+	display:none;
+}
+.content {
+	box-shadow:none;
+}
+#contentMain {float:none;width:auto;margin:0px;padding:0px;}
+body, body h3, html {background:none;}
+
+div.infoBox, div.errorBox, div.actionSuccessBox, div.actionFailBox {
+	padding-left: 10px;
+	background: none;	
+}
+	
+.printHidden {display:none;visibility:hidden;}
+.printOnly {display: auto;}
+
+input {background-color: #ffffff;}
+textarea {background-color: #ffffff;}
+
+table.calendar {margin:0px auto;width:99%;}
+
+/*
+table.calendar td {padding: 1px;}
+table.calendar th {height: auto; padding-top: 2px; padding-bottom: 2px;}
+table.calendar th.vertical {height: auto; padding-top: 2px; padding-bottom: 2px;}
+table.calendar th.left-shifts {height: auto; padding-top: 2px; padding-bottom: 2px;}
+table.calendar td.calendar-month, table.calendar td.calendar-prev, table.calendar td.calendar-next {height: auto; padding-top: 2px; padding-bottom: 2px; background-color:#ffffff; color:#000000;}
+table.calender td.calendar-prev a, table.calendar td.calender-next a {height: auto; background-color:#ffffff; color:#000000; display: none; visibility: hidden;}
+*/
+
+table.calendar td .tdBody table td, table.calendar td.calendar-vertical, table.calendar td.calendar-shift-left {
+	height: auto;
+}
+
+/*
+table.calendar td .tdBody table td, table.calendar td.calendar-normal, table.calendar td.calendar-vertical, table.calendar td.calendar-shift-left {
+	padding-top: 0px; padding-bottom: 0px;
+}
+*/
+.calendar-normal .tBody
+{
+	margin-right:0;
+	margin-left:0;
+}
+
+table.calendar th.left-shifts {
+	/*width: auto;*/
+}
+
+table.calendar td.calendar-cell .divShift, table.calendar td.calendar-cell .divUser {
+	padding: 0;
+	height:15px;
+}
+
+.quickLinks {display:none;visibility:hidden;}
+
+.spanShift {
+	color: #000000;
+	background-color: #ffffff;
+}
+td.calendar-weekend .spanShift,
+td.calendar-weekend-past .spanShift
+{
+	color: #000000;
+	background-color: #f4f6f8;
+}
+td.calendar-today .spanShift
+{
+	color: #000000;
+	background-color: #e8f4fd;
+}
+.calendar-past > a,
+.calendar-past > div,
+.calendar-weekend-past > a,
+.calendar-weekend-past > div {
+    opacity: 1;
+}
+tr.calendarDays th.calendarDayHeader
+{
+    top:auto;
+}
+
+/*
+.myPendingPostedShift {
+	border: 1px solid #000000;
+	color: orange;
+	background-color: #ffffff;
+}
+.myPostedShift {
+	border: 1px solid #000000;
+	color: #ff0000;
+	background-color: #ffffff;
+}
+.myPendingTradedShift {
+	border: 1px solid #000000;
+	color: orange;
+	background-color: #ffffff;
+}
+.myPickedUpOpenShift {
+	border: 1px solid #000000;
+	color: #7878fe;
+	background-color: #ffffff;
+}
+.myPickedUpPostedShift {
+	border: 1px solid #000000;
+	color: #7878fe;
+	background-color: #ffffff;
+}
+.myTradedShift {
+	border: 1px solid #000000;
+	color: #7878fe;
+	background-color: #ffffff;
+}
+.myShift {
+	border: 1px solid #000000;
+	color: #0000ff;
+	background-color: #ffffff;
+}
+.myVacation {
+	border: 1px solid #000000;
+	color: #830101;
+	background-color: #ffffff;
+}
+.myCME {
+	border: 1px solid #000000;
+	color: #830101;
+	background-color: #ffffff;
+}
+*/
+div.legendBox {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 4px;
+	padding-bottom: 0px;
+	border: 0 none;
+}
+.shiftRow td {
+	padding: 0 4px;
+}

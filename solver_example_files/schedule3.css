@@ -1,0 +1,588 @@
+/*table.calendar
+{
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+	margin: 10px auto 13px auto;
+	width: 95%;
+}
+
+table.calendar th
+{
+	padding: 8px 0;
+	width: 14%;
+	margin: 0px;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+	text-align: center;
+}
+
+table.calendar th.vertical
+{
+	padding: 0px 2px 0px 2px;
+	height: 25px;
+	width: auto;
+	margin: 0px;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 11px;
+	font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+	font-weight: bold;
+	background: #ECECEC url(../images/calendar_th_bg.jpg) left bottom repeat-x;
+	color: #000000;
+}
+
+table.calendar th.left-shifts
+{
+	padding: 0px;
+	height: 25px;
+	width: 12%;
+	margin: 0px;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 11px;
+	font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+	font-weight: normal;
+	background: #ECECEC url(../images/calendar_th_bg.jpg) left bottom repeat-x;
+	color: #000000;
+}
+
+table.calendar td.calendar-normal
+{
+	padding: 4px;
+	margin: 0px;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+	font-size: 11px;
+	font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+	background-color: #FFFFFF;
+	color: #000000;
+	vertical-align: top;
+	height: 75px;
+}
+
+table.calendar td.calendar-vertical
+{
+	padding: 3px;
+	margin: 0px;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+	font-size: 11px;
+	font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+	background-color: #FFFFFF;
+	color: #000000;
+	vertical-align: top;
+}
+
+table.calendar td.calendar-cell
+{
+	padding: 0;
+	margin: 0;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+	font-size: 11px;
+	font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+	background-color: #FFFFFF;
+	color: #000000;
+	vertical-align: top;
+}
+
+table.calendar td.calendar-shift-left
+{
+	padding: 3px;
+	margin: 0px;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+	font-size: 11px;
+	font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+	font-weight: bold;
+	background-color: #FFFFFF;
+	color: #000000;
+	vertical-align: middle;
+}
+
+table.calendar td.calendar-gray-bottom-border
+{
+	border-bottom: 1px solid #C5C5C5;
+}
+
+table.calendar td .tdBody
+{
+	padding: 4px 0px 0px 0px;
+	font-size: 11px;
+	font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+	font-weight: normal;
+}
+
+table.calendar td .tdBody table td, table.calendar td.calendar-vertical, table.calendar td.calendar-shift-left, table.calendar td.calendar-cell {
+	line-height: 16px;
+}
+
+table.calendar td.calendar-gray
+{
+	color: #B1B1B1;
+	text-align: left;
+	vertical-align: top;
+	padding: 4px;
+	margin: 0px;
+}
+
+table.calendar td.calendar-past
+{
+  	background-color: #E2E1E1;
+}
+
+table.calendar td.calendar-weekend
+{
+  	background-color: #F3F3F3;
+}
+
+table.calendar td.calendar-weekend-past
+{
+  	background-color: #D0D0D0;
+}
+
+table.calendar td.calendar-today
+{
+	background-color: #01FBFE;
+}
+
+table.calendar td.calendar-weekend-today
+{
+	background-color: #01E9EC;
+}
+
+tr.DayNotes
+{
+
+background:#F3F3F3;
+}
+
+tr.DayNotes td
+{
+width:152px;
+border:  1px solid  #990000;
+}
+
+
+
+table.calendar td.calendar-month
+{
+	font-weight: bold;
+	font-size: 11px;
+	font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+	text-align: center;
+	vertical-align: middle;
+	background-color: #2976CE;
+	color: #ffffff;
+	border: 0px;
+	border-right: 1px solid #2976CE;
+	border-bottom: 1px solid #000000;
+	padding: 0px;
+	height: 25px;
+}
+
+.scheduleDateTitle
+{
+	border: 1px solid #ffffff;
+	padding: 1px;
+	margin: 0px;
+}
+
+.scheduleDateTitle option
+{
+	font-weight: bold;
+	font-size: 11px;
+	font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+}
+
+table.calendar td.calendar-prev
+{
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+	border-right: 1px solid #2976CE;
+	border-bottom: 1px solid #000000;
+	height: 25px;
+}
+
+table.calendar td.calendar-next
+{
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+	border-right: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	height: 25px;
+}
+
+table.calendar td.calendar-prev a, table.calendar td.calendar-next a
+{
+  	font-weight: bold;
+	font-size: 14px;
+	font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+  	background-color: #2976CE;
+  	color: #ffffff;
+	display: block;
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+	line-height: 25px;
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	height: 25px;
+}
+
+table.calendar td.calendar-prev a:hover, table.calendar td.calendar-prev a:active, table.calendar td.calendar-next a:hover, table.calendar td.calendar-next a:active
+{
+	background-color: #134F94;
+}
+
+span.dayNumber {
+	font-size: 12px;
+	font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+	color: #000000;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+span.dayNumberGray {
+	font-size: 12px;
+	font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+	color: #B1B1B1;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+span.calendar-holiday {
+	font-size: 12px;
+	font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+	color: #000000;
+	text-decoration: none;
+	font-style: italic;
+	font-weight: bold;
+}
+
+span.calendar-holiday-gray {
+	font-size: 12px;
+	font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+	color: #B1B1B1;
+	text-decoration: none;
+	font-style: italic;
+	font-weight: bold;
+}
+
+a.dayNumber {
+	font-size: 12px;
+	font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+	color: #000000;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a.dayNumber:hover, a.dayNumber:active {
+	text-decoration: underline;
+}
+
+a.dayNumberGray {
+	font-size: 12px;
+	font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+	color: #B1B1B1;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+a.dayNumberGray:hover, a.dayNumberGray:active {
+	text-decoration: underline;
+}
+
+
+
+.divShift {
+	margin: 0;
+	padding: 0;
+}
+
+table.calendar td.calendar-cell .divShift, table.calendar td.calendar-cell .divUser {
+	padding: 3px;
+}
+table.calendar tr.userRow td.calendar-cell .divShift, table.calendar tr.userRow td.calendar-cell .divUser {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.divShiftDetailsIcon, .divShiftChangedDate {
+	margin: 0;
+	padding: 0;
+	float: right;
+	width: 16px;
+	height: 16px;
+}
+
+.pendingOpenShift {
+	background-color: #FDDE64;
+}
+.openOpenShift {
+	background-color: #A8FD97;
+}
+.filledOpenShift {
+}
+.pendingPostedShift {
+	background-color: #FDDE64;
+}
+.openPostedShift {
+	background-color: #A8FD97;
+}
+table.calendar td.openPostedShift {
+	background-color: #A8FD97;
+}
+.myPendingPostedShift {
+	background-color: #FF8040;
+	font-weight: bold;
+	color: #ffffff;
+}
+.myPostedShift {
+	font-weight: bold;
+	color: #ffffff;
+	background-color: #ff0000;
+}
+.filledPostedShift {
+}
+.pendingTradedShift {
+	background-color: #FDDE64;
+}
+.myPendingTradedShift {
+	background-color: #FF8040;
+	font-weight: bold;
+	color: #ffffff;
+}
+.tradedShift {
+}
+.filledShift {
+}
+.emptyShift {
+}
+.myPickedUpOpenShift {
+	font-weight: bold;
+	color: #ffffff;
+	background-color: #7878fe;
+}
+.myPickedUpPostedShift {
+	font-weight: bold;
+	color: #ffffff;
+	background-color: #7878fe;
+}
+.myTradedShift {
+	font-weight: bold;
+	color: #ffffff;
+	background-color: #7878fe;
+}
+.myShift {
+	font-weight: bold;
+	color: #ffffff;
+	background-color: #0000ff;
+}
+.myVacation {
+	font-weight: bold;
+	color: #ffffff;
+	background-color: #830101;
+}
+.myCME {
+	font-weight: bold;
+	color: #ffffff;
+	background-color: #830101;
+}
+
+
+.pendingOpenShiftdCC {
+	border: 2px solid #FDDE64;
+}
+.openOpenShiftdCC {
+	border: 2px solid #5ac245;
+	color: #5ac245;
+}
+.filledOpenShiftdCC {
+}
+.pendingPostedShiftdCC {
+	border: 2px solid #FDDE64;
+}
+.openPostedShiftdCC {
+	border: 2px solid #5ac245;
+	color: #5ac245;
+}
+table.calendar td.openPostedShiftdCC {
+	border: 2px solid #5ac245;
+	color: #5ac245;
+}
+.myPendingPostedShiftdCC {
+	border: 2px solid #FF8040;
+	font-weight: bold;
+}
+.myPostedShiftdCC {
+	font-weight: bold;
+	border: 2px solid #ff0000;
+}
+.filledPostedShiftdCC {
+}
+.pendingTradedShiftdCC {
+	border: 2px solid #FDDE64;
+}
+.myPendingTradedShiftdCC {
+	border: 2px solid #FF8040;
+	font-weight: bold;
+}
+.tradedShiftdCC {
+}
+.filledShiftdCC {
+}
+.emptyShiftdCC {
+}
+.myPickedUpOpenShiftdCC {
+	font-weight: bold;
+	border: 2px solid #7878fe;
+}
+.myPickedUpPostedShiftdCC {
+	font-weight: bold;
+	border: 2px solid #7878fe;
+}
+.myTradedShiftdCC {
+	font-weight: bold;
+	border: 2px solid #7878fe;
+}
+.myShiftdCC {
+	font-weight: bold;
+	border: 2px solid #0000ff;
+}
+.myVacationdCC {
+	font-weight: bold;
+	border: 2px solid #830101;
+}
+.myCMEdCC {
+	font-weight: bold;
+	border: 2px solid #830101;
+}
+
+
+.splitShift {
+	margin-left: 20px;
+}
+
+.split {
+	background-color: yellow;
+	color: #000000;
+	font-weight: normal;
+}
+
+.timeChanged {
+	background-color: #84d7fd;
+	color: #000000;
+	font-weight: normal;
+}
+
+.calendar-grayed-out {
+	color: #B1B1B1 !important;
+}
+
+.calendar-volprod-under1 {
+	background-color: #f6c7c7 !important;
+}
+
+.calendar-volprod-under2 {
+	background-color: #eea3a3 !important;
+}
+
+.calendar-volprod-under3 {
+	background-color: #ea7d7d !important;
+}
+
+.calendar-volprod-under4, .calendar-volprod-under5 {
+	background-color: #de5959 !important;
+}
+
+.calendar-volprod-over1 {
+	background-color: #ccf3cf !important;
+}
+
+.calendar-volprod-over2 {
+	background-color: #afe6b2 !important;
+}
+
+.calendar-volprod-over3 {
+	background-color: #8cd592 !important;
+}
+
+.calendar-volprod-over4, .calendar-volprod-over5 {
+	background-color: #6ec774 !important;
+}
+
+.calendar-volprod-both {
+	background-color: #eff4a1 !important;
+}
+
+.calendar-volprod-lowpph1 {
+	background-color: #c0d4fd !important;
+}
+
+.calendar-volprod-lowpph2 {
+	background-color: #a9c5ff !important;
+}
+
+.calendar-volprod-lowpph3 {
+	background-color: #92b6fe !important;
+}
+
+.calendar-volprod-lowpph4, .calendar-volprod-lowpph5 {
+	background-color: #7ca7ff !important;
+}
+
+table.calendar td .tdBodyTopPad {
+	padding-top: 2px !important;
+}
+
+.calendar-normal-red-border {
+	padding: 2px 3px 3px 2px !important;
+	border: 2px solid red !important;
+}
+
+.calendar-vertical-red-border {
+	padding: 1px 2px 2px 1px !important;
+	border: 2px solid red !important;
+}
+
+.calendar-cell-red-border {
+	border: 2px solid red !important;
+}
+
+.spanShift a, .divUser a {
+	color: inherit;
+	font-size: inherit;
+	text-decoration: inherit;
+	font-weight: inherit;
+}
+
+.spanShift a:hover, .divUser a:hover {
+	text-decoration: underline;
+}
+
+.tdPAHd {
+	text-align: left;
+}
+
+.emergencyShift {
+	font-weight: bold;
+	background-color:red;
+	color: black;
+}
+.emergencyShift .spanShift {
+	font-weight: bold;
+}
+.calendar .hasPayRate:after
+{
+	color: red;
+	font-weight: bold;
+	content: " P";
+}*/

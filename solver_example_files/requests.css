@@ -1,0 +1,119 @@
+#dropmenudiv{
+position:absolute;
+border:1px solid black;
+border-bottom-width: 0;
+font-size: 11.7px;
+line-height: 1.5em;
+z-index:100;
+width:81px !important;
+background-color: #eeeeee !important;
+}
+
+#dropmenudiv a{
+width: 100%;
+display: block;
+text-indent: 1.8px;
+border-bottom: 1px solid black;
+/*padding: 1px 0;*/
+text-decoration: none;
+/*color:#000;*/
+background-color: #eeeeee;
+padding: 2.7px;
+}
+
+#dropmenudiv a:hover{ /*hover background color*/
+background-color: #0372BA;
+color: #FFFFFF;
+}
+
+.tdr td {
+	line-height: 1.4em;
+	padding: 2.7px;
+}
+
+.fillLink
+{
+	float: right;
+	margin: 3.6px 0 0 0;
+	padding: 0;
+	border: 0 none;
+	vertical-align: top;
+}
+
+:root {
+	--custom-border-radius: 3.6px;
+}
+
+.redText {
+	color:#BA1828;
+}
+
+.darkGreenBackGround, .requestStyling_on:hover, .requestStyling_onShifts:hover, .requestStyling_onTimes:hover {
+	background-color: #3c763d;
+	color: white;
+	font-weight: bold;
+	border-radius: var(--custom-border-radius);
+}
+
+table.calendar td.lightGreenBackGround, table.calendar tr.lightGreenBackGround, span.lightGreenBackGround {
+	background-color: #dff0d8;
+}
+
+.darkRedBackGround, .requestStyling_vacation:hover, .requestStyling_cme:hover, .requestStyling_off:hover, .requestStyling_shifts:hover, .requestStyling_off:hover .requestStylingLabel, .requestStyling_shifts:hover .requestStylingLabel {
+	background-color: #a94442;
+	color: white;
+	font-weight: bold;
+	border-radius: var(--custom-border-radius);
+}
+
+table.calendar td.lightRedBackGround, table.calendar tr.lightRedBackGround, span.lightRedBackGround {
+	background-color: #f2dede;
+}
+
+.divRequest.darkRedBackGround, .divRequest.darkGreenBackGround {
+	padding: 3.6px 7.2px 3.6px 7.2px;
+	margin: 1.8px 0px 1.8px 0px;
+}
+
+.divRequestsOLD .divRequest.darkRedBackGround, .divRequestsOLD .divRequest.darkGreenBackGround {
+	padding: inherit;
+	margin: inherit;
+	background-color: inherit;
+	color: inherit;
+	font-weight: inherit;
+	border-radius: inherit;
+}
+
+.none:not(.calendar-normal), .none .requestStyling_none:hover {
+	font-weight: bold;
+	background-color: #e0e0e0;
+	border-radius: var(--custom-border-radius);
+}
+
+.requestStyling_none, .requestStyling_vacation, .requestStyling_cme, .requestStyling_off, .requestStyling_on, .requestStyling_shifts, .requestStyling_onShifts, .requestStyling_onTimes {
+	cursor: pointer;
+}
+
+.requestStyling_none:hover, table.calendar td.calendar-past .requestStyling_none, table.calendar td.calendar-past .none, table.calendar td.calendar-past .none .requestStyling_none:hover {
+	background-color: white;
+	color: black;
+	font-weight: bold;
+	border-radius: var(--custom-border-radius);
+}
+
+.requestStylingLabel {
+	cursor: pointer;
+}
+
+.requestStyling_TD {
+	line-height: 1.4em;
+	padding: 2.7px;
+}
+
+.userRequestSpan {
+	line-height: 21.6px;
+}
+
+.tdr select {
+	padding: 1.8px 23.4px 1.8px 7.2px;
+}

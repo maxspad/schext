@@ -1,0 +1,188 @@
+.contractValueDiv, .contractValueDivShift {
+	margin: 3.6px 0 1.8px 0;
+	padding: 1.8px;
+	background-color: #c7f3b4;
+	border: 1px solid #90bc7d;
+}
+
+.contractValueDivShift {
+	margin: 1.8px 0 5.4px 0;
+}
+
+#divShiftConstraints {
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 0 0 4.5px 0;
+}
+
+.divShiftConstraint {
+	margin-top:1.8px;
+	margin-left:4.5px;
+	margin-right:0px;
+	margin-bottom:6.3px;
+	padding: 4.5px;
+	width: 477px;
+	background-color: #dbe4f3;
+	border: 1px solid #a0afcb;
+	clear: both;
+	float: left;
+}
+
+.divShiftConstraintRemove {
+	margin: 0 0 0 4.5px;
+	padding: 0;
+	float: right;
+}
+
+.divShiftConstraintRemove img {
+	margin: 0;
+	padding: 0;
+	vertical-align: top;
+	border: 0;
+	cursor: pointer;
+}
+
+.divShiftConstraintName {
+	margin: 0 0 4.5px 0;
+	padding: 0;
+}
+
+.divShiftConstraintValues {
+	margin: 0;
+	padding: 0;
+	float: left;
+	clear: both;
+	/*line-height:18px;*/
+}
+
+.divShiftConstraintGrouping {	
+	background-color: #e0e0e0 !important;
+	border: 1px solid #a0afcb;
+	margin: 0 0 4.5px 0;
+	padding: 2.7px;
+}
+
+.divShiftConstraint p {
+	/*margin: 0 !important;
+	padding: 0 0 5px 0 !important;
+	line-height:18px;*/
+}
+
+.rcDay {
+	display: block;
+	float: left;
+	width: 68.4px;
+	margin: 0;
+	padding: 0;
+	line-height:16.2px;
+	font-weight: bold;
+}
+
+div.weightRight {
+	float: right;
+	margin: 0;
+	padding: 0 0 0 9px;
+	vertical-align: middle;
+	/*line-height: 25px;*/
+}
+
+input.weightInputBox {
+	/*margin: 0px;
+	width: 70px;
+	height: 17px;
+	font-size: 11px;
+	font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+	color: #505050;
+	padding: 5px 5px 3px 5px;
+	background: transparent url(../images/xsmall_input_box.gif?v=1) top left no-repeat;
+	border: 0px;*/
+	width: 63px;
+}
+
+.weightFunctionDiv1, .weightFunctionDiv2, .weightFunctionDivNull {
+	float: right;
+	margin: 0 0 0 5px;
+	padding: 0;
+	width: 25px;
+	height: 25px;
+	vertical-align: middle;
+}
+
+.weightFunctionDiv1 {
+	background: transparent url(../images/weight_function_25.gif?v=1) left -25px no-repeat;
+}
+
+.weightFunctionDiv2 {
+	background: transparent url(../images/weight_function_25.gif?v=1) left 0px no-repeat;
+}
+
+.weightFunctionDivNull {
+	background: transparent url(../images/weight_function_25.gif?v=1) left -50px no-repeat;
+}
+
+.weightFunctionDiv1 img, .weightFunctionDiv2 img, .weightFunctionDivNull img {
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+	width: 25px;
+	height: 25px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.weightFunctionDiv1Small, .weightFunctionDiv2Small, .weightFunctionDivNullSmall {
+	float: left;
+	margin: 0 0 0 5px;
+	padding: 0;
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+}
+
+.weightFunctionDiv1Small {
+	background: transparent url(../images/weight_function_20.gif?v=1) left -20px no-repeat;
+}
+
+.weightFunctionDiv2Small {
+	background: transparent url(../images/weight_function_20.gif?v=1) left 0px no-repeat;
+}
+
+.weightFunctionDivNullSmall {
+	background: transparent url(../images/weight_function_20.gif?v=1) left -40px no-repeat;
+}
+
+.weightFunctionDiv1Small img, .weightFunctionDiv2Small img, .weightFunctionDivNullSmall img {
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.tdChangedViolation {
+	background-color: #ebc5c5 !important;
+}
+
+.divRequest {
+	margin: 0;
+	padding: 0 0 2.7px 0;
+}
+
+.divRequestsOLD {
+	background-color: #DDDDDD;
+}
+
+.divRequests {
+	border:0;margin:0;padding:4.5px;display:none;
+}
+
+.divComments {
+	position:absolute;display:inline;left:-1000px;top:0px;width:250px;height:auto;margin:0;padding:0;line-height:10.8px;
+}
+
+.divComments span {
+	color: #333333;
+}
