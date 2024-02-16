@@ -72,8 +72,10 @@ def process_shift_row(sr : Tag):
 
 def main():
     with open(SA_HTML_FILE) as fp:
-        soup = BeautifulSoup(fp, features="html.parser")
-    print(f'Parsed {SA_HTML_FILE}')
+        extract_calendar(fp)
+
+def extract_calendar(fp) -> pd.DataFrame:
+    soup = BeautifulSoup(fp, features='html.parser')
 
     # get all the shift rows
     shift_rows = soup.find_all("tr", class_='shiftRow')
@@ -85,15 +87,13 @@ def main():
     shifts = [process_shift_row(sr) for sr in shift_rows]  
     # print(shifts)  
     shifts = pd.DataFrame(shifts)
-    print(shifts)
     shifts = shifts[['shiftDate','shiftName','userName','userId']]
     shiftsp = (shifts.pivot(columns='shiftDate', index=['userName','userId'], values='shiftName')
                      .fillna('')
                      .sort_index(axis=1)
                      .sort_index(axis=0)
     )
-    print(shiftsp)
-    shiftsp.to_csv('output.csv')
+    return shiftsp
 
 if __name__ == '__main__':
     main()
