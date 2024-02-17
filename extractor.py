@@ -72,10 +72,13 @@ def process_shift_row(sr : Tag):
 
 def main():
     with open(SA_HTML_FILE) as fp:
-        extract_calendar(fp)
+        extract_calendar(make_soup(fp))
 
-def extract_calendar(fp) -> pd.DataFrame:
+def make_soup(fp) -> BeautifulSoup:
     soup = BeautifulSoup(fp, features='html.parser')
+    return soup
+
+def extract_calendar(soup : BeautifulSoup) -> pd.DataFrame:
 
     # get all the shift rows
     shift_rows = soup.find_all("tr", class_='shiftRow')
