@@ -12,7 +12,7 @@ def get_soup(f):
 def get_csv_output(df : pd.DataFrame) -> str:
     return df.to_csv().encode('utf-8')
 
-
+st.set_page_config(page_title='ShiftAdmin Generation Extractor')
 st.title('ShiftAdmin Generation Extractor')
 st.markdown('''This app makes it easier to convert ShiftAdmin generation results into
             a spreadsheet format for manual review and editing. ''')
