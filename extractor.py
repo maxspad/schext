@@ -32,7 +32,14 @@ def process_shift_row(sr : Tag):
     user_name = spanShift.string
 
     user_id_shift_id = ' '.join(spanShift.parent['class'])
-    user_id = int(USER_ID_RE.search(user_id_shift_id)[1])
+    print(user_id_shift_id)
+
+    user_id_match = USER_ID_RE.search(user_id_shift_id)
+    if user_id_match is None:
+        user_id = -1
+    else:
+        user_id = int(user_id_match[1])
+
     shift_id = int(SHIFT_ID_RE.search(user_id_shift_id)[1])
 
     # Go up the hierarchy until we find the <td> with calendar-normal class
